@@ -1,7 +1,7 @@
 pipeline{
     tools{
-        java 'JAVA'
-        maven 'MAVEN'
+        java 'java11'
+        maven 'maven'
     }
     agent {
         label 'build-node1'
