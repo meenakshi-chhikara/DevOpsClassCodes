@@ -3,9 +3,11 @@ pipeline{
         jdk 'JAVA'
         maven 'MAVEN'
     }
-	agent any
-      stages{
-           stage('Checkout'){
+    agent {
+        label 'build-node1'
+    }
+    stages{
+         stage('Checkout'){
 	    
                steps{
 		 echo 'cloning..'
