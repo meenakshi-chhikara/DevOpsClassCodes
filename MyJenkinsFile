@@ -67,8 +67,7 @@ pipeline{
 	stage('Publish image to Docker Hub') {
           
             steps {
-        withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
-          sh  'docker push  meenakshichhikara/devopsclasscodes:latest'
+        		echo 'publish to custom repo or dockerhub'
         }
                   
           }
