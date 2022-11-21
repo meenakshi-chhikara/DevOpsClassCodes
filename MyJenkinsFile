@@ -75,7 +75,7 @@ pipeline{
       stage('Deploy using container') {
            steps 
   		 {
-                sh "docker run -d -p 8090:8080  devopsclasscodes:latest'"
+                sh 'docker run -d -p 8090:8080  devopsclasscodes:latest'
  
             }
         }
