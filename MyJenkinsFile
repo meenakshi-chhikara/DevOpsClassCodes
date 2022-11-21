@@ -70,7 +70,6 @@ pipeline{
         		echo 'publish to custom repo or dockerhub'
         }
                   
-          }
         }
      
       stage('Deploy using container') {
